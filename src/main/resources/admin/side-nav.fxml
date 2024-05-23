@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jafafxlearn.controller.Admin.adminSideNav">
+   <left>
+      <VBox prefHeight="700.0" prefWidth="300.0" style="-fx-background-color: #5AAEE6;" BorderPane.alignment="CENTER">
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="113.0" prefWidth="309.0" text="KPI SYSTEM" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="29.0" />
+            </font>
+         </Label>
+         <Button mnemonicParsing="false" onAction="#dashboardNav" prefHeight="84.0" prefWidth="300.0" style="-fx-background-color: #5AAEE6;" text="Dashboard" textFill="WHITE">
+            <font>
+               <Font size="20.0" />
+            </font>
+            <graphic>
+               <ImageView>
+                  <image>
+                     <Image url="@../assets/dashboardIcon.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#dataUserNav" prefHeight="84.0" prefWidth="300.0" style="-fx-background-color: #5AAEE6;" text="Data User" textFill="WHITE">
+            <font>
+               <Font size="20.0" />
+            </font>
+            <graphic>
+               <ImageView>
+                  <image>
+                     <Image url="@../assets/dataUserIcon.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+
+         <Button mnemonicParsing="false" onAction="#dataJobDescNav" prefHeight="84.0" prefWidth="300.0" style="-fx-background-color: #5AAEE6;" text="Data Jobdesc" textFill="WHITE">
+            <font>
+               <Font size="20.0" />
+            </font>
+            <graphic>
+               <ImageView>
+                  <image>
+                     <Image url="@../assets/dataUserIcon.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#kpiNav" prefHeight="84.0" prefWidth="300.0" style="-fx-background-color: #5AAEE6;" text="KPI" textFill="WHITE">
+            <font>
+               <Font size="20.0" />
+            </font>
+            <graphic>
+               <ImageView>
+                  <image>
+                     <Image url="@../assets/KPIicon.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#logout" prefHeight="84.0" prefWidth="300.0" style="-fx-background-color: #5AAEE6;" text="Logout" textFill="WHITE">
+            <font>
+               <Font size="20.0" />
+            </font>
+            <graphic>
+               <ImageView>
+                  <image>
+                     <Image url="@../assets/logout.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="countAdmin" layoutX="56.0" layoutY="36.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="186.0" text="10&#10;&#10;Admin"/>
+            <Button fx:id="countSPV" layoutX="257.0" layoutY="36.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="186.0" text="11&#10;Supervisor" />
+            <Button fx:id="countStaff" layoutX="456.0" layoutY="36.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="186.0" text="Jumlah Staff" />
+            <Button fx:id="countJobdesc" layoutX="56.0" layoutY="187.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="186.0" text="Jumlah Jobdesc" />
+            <Button fx:id="countTask" layoutX="257.0" layoutY="187.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="186.0" text="Jumlah Task" />
+            <Button fx:id="countTaskDone" layoutX="456.0" layoutY="187.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="186.0" text="Jumlah Task Selesai" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

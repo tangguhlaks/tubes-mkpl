@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane fx:id="bp" fx:controller="com.example.jafafxlearn.controller.Admin.adminSideNav" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <VBox prefHeight="700.0" prefWidth="300.0" style="-fx-background-color: #87CEFA;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="113.0" prefWidth="309.0" text="KPI SYSTEM" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="29.0" />
+                    </font>
+                </Label>
+                <Button onAction="#dashboardNav" mnemonicParsing="false" prefHeight="84.0" prefWidth="305.0" style="-fx-background-color: #5AAEE6;" text="Dashboard" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button onAction="#dataJobDescNav" mnemonicParsing="false" prefHeight="84.0" prefWidth="300.0" style="-fx-background-color: #5AAEE6;" text="Data Jobdesc" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button onAction="#kpiNav" mnemonicParsing="false" prefHeight="84.0" prefWidth="300.0" style="-fx-background-color: #5AAEE6;" text="KPI" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="336.0" layoutY="322.0" text="Dashboard" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

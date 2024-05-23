@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jafafxlearn.controller.Staff.staffSideNav">
+   <left>
+      <VBox prefHeight="700.0" prefWidth="300.0" style="-fx-background-color: #5AAEE6;" BorderPane.alignment="CENTER">
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="113.0" prefWidth="309.0" text="KPI SYSTEM" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="29.0" />
+            </font>
+         </Label>
+         <Button mnemonicParsing="false" onAction="#dashboardNav" prefHeight="84.0" prefWidth="300.0" style="-fx-background-color: #5AAEE6;" text="Dashboard" textFill="WHITE">
+            <font>
+               <Font size="20.0" />
+            </font>
+            <graphic>
+               <ImageView>
+                  <image>
+                     <Image url="@../assets/dashboardIcon.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#controllingNav" prefHeight="84.0" prefWidth="300.0" style="-fx-background-color: #5AAEE6;" text="Controlling" textFill="WHITE">
+            <font>
+               <Font size="20.0" />
+            </font>
+            <graphic>
+               <ImageView>
+                  <image>
+                     <Image url="@../assets/KPIicon.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#logout" prefHeight="84.0" prefWidth="300.0" style="-fx-background-color: #5AAEE6;" text="Logout" textFill="WHITE">
+            <font>
+               <Font size="20.0" />
+            </font>
+            <graphic>
+               <ImageView>
+                  <image>
+                     <Image url="@../assets/logout.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <Button fx:id="countTask" layoutX="54.0" layoutY="46.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="186.0" text="Jumlah Task" />
+         <Button fx:id="countTaskDone" layoutX="251.0" layoutY="45.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="186.0" text="Jumlah Task Selesai" />
+      </AnchorPane>
+   </center>
+</BorderPane>

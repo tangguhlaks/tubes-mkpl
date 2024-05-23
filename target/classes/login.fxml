@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="mypane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jafafxlearn.controller.Login">
+   <left>
+      <AnchorPane prefHeight="1000.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="mylandingpage" fitHeight="${mypane.height}" fitWidth="${mypane.width}" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/landingpage.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="mypane2" prefHeight="1000.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="tf_username" layoutX="190.0" layoutY="254.0" prefHeight="51.0" prefWidth="388.0" />
+            <Text layoutX="78.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="67.951171875">
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
+            <PasswordField fx:id="tf_password" layoutX="190.0" layoutY="335.0" prefHeight="51.0" prefWidth="388.0" />
+            <Button fx:id="btnLogin" layoutX="190.0" layoutY="430.0" mnemonicParsing="false" onAction="#btnLoginOnClick" prefHeight="51.0" prefWidth="388.0" style="-fx-background-color: #87CEFA;" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <ImageView fitHeight="71.0" fitWidth="68.0" layoutX="350.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/lock.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="78.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="67.951171875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Label fx:id="labelNotif" alignment="CENTER" layoutX="268.0" layoutY="396.0" prefHeight="19.0" prefWidth="231.0" text="" textFill="#fd1a1a">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

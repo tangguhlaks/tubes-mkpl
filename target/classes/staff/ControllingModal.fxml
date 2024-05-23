@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jafafxlearn.controller.Staff.staffControllingModalController">
+   <children>
+      <Label layoutX="111.0" layoutY="32.0" prefHeight="17.0" prefWidth="78.0" text="Isi Data Actual" />
+      <Label layoutX="30.0" layoutY="100.0" prefHeight="17.0" prefWidth="42.0" text="Actual" />
+      <TextField fx:id="tf" layoutX="85.0" layoutY="96.0" prefHeight="25.0" prefWidth="166.0" />
+      <DatePicker fx:id="df" layoutX="78.0" layoutY="96.0" />
+      <Button fx:id="btn" onAction="#addActual" layoutX="201.0" layoutY="149.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="Add" />
+   </children>
+</AnchorPane>

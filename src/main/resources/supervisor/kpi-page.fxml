@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jafafxlearn.controller.Supervisor.supervisorKPIController">
+    <Label layoutX="469.0" layoutY="54.0" text="Target Value" />
+    <TextField fx:id="tfTargetValue" layoutX="469.0" layoutY="81.0" prefHeight="26.0" prefWidth="181.0" />
+    <Label layoutX="237.0" layoutY="116.0" text="Target Date" />
+    <DatePicker fx:id="tfTargetDate" layoutX="237.0" layoutY="134.0" prefHeight="26.0" prefWidth="181.0" />
+    <Label layoutX="235.0" layoutY="54.0" text="Tipe Target" />
+    <ChoiceBox fx:id="cbTipe" layoutX="235.0" layoutY="81.0" prefWidth="200.0" />
+    <TableView fx:id="tableView" layoutX="22.0" layoutY="187.0" prefHeight="496.0" prefWidth="656.0" style="-fx-border-color: #87CEFA;">
+        <columns>
+            <TableColumn fx:id="colNo" prefWidth="75.0" text="No" />
+            <TableColumn fx:id="colNama" prefWidth="158.4000244140625" text="Nama" />
+            <TableColumn fx:id="colTask" prefWidth="163.199951171875" text="Task" />
+            <TableColumn fx:id="colTipe" prefWidth="163.199951171875" text="Tipe Task" />
+            <TableColumn fx:id="colTarget" prefWidth="163.199951171875" text="Target" />
+            <TableColumn fx:id="colActual" prefWidth="163.199951171875" text="Actual" />
+            <TableColumn fx:id="colAction" prefWidth="75.0" text="Aksi" />
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+   <ChoiceBox fx:id="cbKarywan" layoutX="24.0" layoutY="81.0" prefHeight="25.0" prefWidth="191.0" />
+   <Label layoutX="24.0" layoutY="54.0" text="Karyawan" />
+   <ChoiceBox fx:id="cbJobdesc" layoutX="24.0" layoutY="134.0" prefHeight="25.0" prefWidth="191.0" />
+   <Label layoutX="24.0" layoutY="116.0" text="Jobdesc" />
+   <Button layoutX="591.0" layoutY="134.0" mnemonicParsing="false" onAction="#add" text="Tambah" />
+</AnchorPane>

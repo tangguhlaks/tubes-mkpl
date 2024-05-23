@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jafafxlearn.controller.Supervisor.supervisorUserController">
+
+    <Button fx:id="btnTambah" layoutX="362.0" layoutY="97.0" mnemonicParsing="false" onAction="#tambahUser" prefHeight="26.0" prefWidth="98.0" text="Tambah" />
+   <TableView fx:id="staffTableView" layoutX="20.0" layoutY="179.0" prefHeight="496.0" prefWidth="659.0" style="-fx-border-color: #87CEFA;">
+      <columns>
+         <TableColumn fx:id="colNo" prefWidth="52.00003242492676" text="No" />
+         <TableColumn fx:id="colNama" prefWidth="97.33330535888672" text="Nama Lengkap" />
+         <TableColumn fx:id="colUsername" prefWidth="90.00001525878906" text="Username" />
+         <TableColumn fx:id="colJK" prefWidth="92.66668701171875" text="Jenis Kelamin" />
+         <TableColumn fx:id="colDepartemen" prefWidth="75.0" text="Departemen" />
+         <TableColumn fx:id="colJabatan" prefWidth="75.0" text="Jabatan" />
+         <TableColumn fx:id="colAction" prefWidth="75.0" text="Aksi" />
+      </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+   </TableView>
+   <Label layoutX="15.0" layoutY="30.0" text="Nama Lengkap" />
+   <TextField fx:id="tfNama" layoutX="14.0" layoutY="48.0" prefHeight="26.0" prefWidth="150.0" />
+   <Label layoutX="191.0" layoutY="28.0" text="Username" />
+   <TextField fx:id="tfUsername" layoutX="189.0" layoutY="47.0" prefHeight="26.0" prefWidth="150.0" />
+   <PasswordField fx:id="pfPassword" layoutX="361.0" layoutY="47.0" />
+   <Label layoutX="363.0" layoutY="29.0" text="Password" />
+   <Label layoutX="523.0" layoutY="28.0" text="Jenis Kelamin" />
+   <ChoiceBox fx:id="cbJK" layoutX="523.0" layoutY="47.0" prefHeight="26.0" prefWidth="150.0" />
+   <ChoiceBox fx:id="cbDepartemen" layoutX="14.0" layoutY="98.0" prefWidth="150.0" />
+   <Label layoutX="15.0" layoutY="80.0" text="Departemen" />
+   <ChoiceBox fx:id="cbJabatan" layoutX="191.0" layoutY="98.0" prefWidth="150.0" />
+   <Label layoutX="192.0" layoutY="80.0" text="Jabatan" />
+   <Label fx:id="alert" layoutX="336.0" layoutY="146.0" text="" textFill="RED" />
+</AnchorPane>
